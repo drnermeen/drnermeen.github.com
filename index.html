@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المركز الطبي المتميز</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #f8f9fa; }
+        .hero-section {
+            background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.6)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .service-card:hover { transform: translateY(-10px); }
+        .icon-box { font-size: 3rem; color: #0d6efd; }
+        .stats-section { background-color: #0d6efd; color: white; padding: 50px 0; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-heart-pulse-fill me-2"></i>شفاء الطبي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">حولنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">رعايتكم هي أولويتنا القصوى</h1>
+            <p class="lead mb-5">نقدم أفضل الخدمات الطبية بأحدث التقنيات العالمية وبإشراف نخبة من الأطباء.</p>
+            <a href="#contact" class="btn btn-light btn-lg px-5">احجز موعدك الآن</a>
+        </div>
+    </section>
+
+    <section id="services" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">خدماتنا الطبية</h2>
+            <div class="mx-auto bg-primary" style="height: 3px; width: 60px;"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4">
+                    <div class="icon-box mb-3"><i class="bi bi-capsule"></i></div>
+                    <h3>الصيدلية</h3>
+                    <p>توفير كافة الأدوية والمستلزمات الطبية على مدار الساعة.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4">
+                    <div class="icon-box mb-3"><i class="bi bi-person-heart"></i></div>
+                    <h3>رعاية القلب</h3>
+                    <p>فحوصات شاملة وعناية مركزة لمرضى القلب بأحدث الأجهزة.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4">
+                    <div class="icon-box mb-3"><i class="bi bi-emergency"></i></div>
+                    <h3>الطوارئ</h3>
+                    <p>قسم طوارئ مجهز لاستقبال كافة الحالات الحرجة 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><h3>+150</h3><p>طبيب متخصص</p></div>
+                <div class="col-md-3"><h3>+10k</h3><p>مريض سعيد</p></div>
+                <div class="col-md-3"><h3>25</h3><p>قسم طبي</p></div>
+                <div class="col-md-3"><h3>100%</h3><p>جودة الرعاية</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="bg-white p-5 rounded shadow">
+                    <h2 class="text-center mb-4">تواصل معنا</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="الاسم الكامل">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="رسالتك"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">إرسال الطلب</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">جميع الحقوق محفوظة &copy; 2026 - المركز الطبي</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
