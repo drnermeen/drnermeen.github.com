@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Health Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: #0d6efd;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(13,110,253,0.85), rgba(13,110,253,0.85)),
+                        url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 120px 0;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .about-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .services-section {
+            padding: 80px 0;
+        }
+
+        .articles-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .contact-section {
+            padding: 80px 0;
+        }
+
+        .footer {
+            background: #0d6efd;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .btn-primary {
+            padding: 10px 25px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MediCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Your Trusted Medical Information Platform</h1>
+            <p class="lead mt-3">Discover reliable medical articles, health tips, symptoms, treatments, and expert health guidance in one place.</p>
+            <a href="#services" class="btn btn-light btn-lg mt-3">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title">About Our Medical Website</h2>
+                    <p>
+                        Our medical website provides accurate, easy-to-understand, and trusted health information
+                        about diseases, symptoms, treatments, medications, and medical advice. We aim to raise
+                        health awareness and help users make better health decisions.
+                    </p>
+                    <p>
+                        All content is written in a simplified medical style to suit patients, students, and
+                        anyone looking for reliable medical knowledge online.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" class="img-fluid rounded-4" alt="Medical" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section text-center">
+        <div class="container">
+            <h2 class="section-title">Our Medical Services</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <h5 class="fw-bold">Disease Guides</h5>
+                        <p>Comprehensive medical guides covering causes, symptoms, diagnosis, and treatment of common diseases.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <h5 class="fw-bold">Health Articles</h5>
+                        <p>SEO-optimized medical articles about digestion, skin care, nutrition, and chronic conditions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <h5 class="fw-bold">Medical Tips</h5>
+                        <p>Daily health tips, preventive care advice, and lifestyle recommendations based on medical research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <div class="container text-center">
+            <h2 class="section-title">Latest Medical Articles</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1580281657521-1c8b3d0a1f6b" class="card-img-top rounded" alt="Article">
+                        <div class="card-body">
+                            <h5 class="card-title">Indigestion After Meals</h5>
+                            <p class="card-text">Learn about causes of indigestion, symptoms, and the best medical and home treatments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" class="card-img-top rounded" alt="Article">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthy Nutrition</h5>
+                            <p class="card-text">Discover the best nutrition tips for better digestion, immunity, and overall health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289" class="card-img-top rounded" alt="Article">
+                        <div class="card-body">
+                            <h5 class="card-title">Medical Symptoms Guide</h5>
+                            <p class="card-text">A complete guide to common symptoms and when you should consult a doctor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p>Have questions about health topics or medical content? Reach out to us anytime.</p>
+                    <p><strong>Email:</strong> info@medicalsite.com</p>
+                    <p><strong>Phone:</strong> +20 100 000 0000</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">© 2026 MediCare Medical Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
